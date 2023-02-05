@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>prizing plan</title>
+</head>
+<body>
+  <div class="container">
+      <h1 class="title">We offer great <span>price</span> plan for the <br>application</h1>
+      <div class="btns">
+      <div class="tab-btn">
+         <a href="" class="btn-01">Monthly</a>
+         <a href="" class="btn-02">Yearly</a>
+      </div>
+      <p class="save">save up to 30%</p>
+    </div>
+    <div class="prizing-boxes">
+        <div class="prizing-box box01">
+            <h2 class="start">starter</h2>
+            <p class="text">
+               Starter pack to help you to <br>
+               create project plan with<br>
+               confidence
+            </p>
+            <h2 class="free">free</h2>
+            <button>get started</button>
+        </div>
+
+        <div class="prizing-box box02 active-box ">
+          <h2 class="start">pro</h2>
+          <p class="text">
+            More power for small teams <br>
+            create project plans with <br>
+            confidence
+          </p>
+          <h2 class="free"><sub>$</sub>20 <sub>/ month</sub></h2>
+          <button>get started</button>
+      </div>
+
+      <div class="prizing-box box03">
+        <h2 class="start">business</h2>
+        <p class="text">
+          For companies that need to <br>
+          manage work happening <br>
+          across multiple teams.
+        </p>
+        <h2 class="free"><sub>$</sub>100 <sub>/ month</sub></h2>
+        <button>get started</button>
+    </div>
+
+    <div class="prizing-box box04">
+      <h2 class="start">enterprise</h2>
+      <p class="text">
+        For enterprise that need <br>
+        additional security, control, <br>
+        and support.
+      </p>
+      <h2 class="free">Custom</h2>
+      <button>get started</button>
+  </div>
+
+
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+       let animation = anime({
+         targets:'.prizing-boxes',
+         translateY:[120,0],
+         opacity:[0,1],
+         duration:1000,
+         easing:'easeInOutSine',
+         delay:500,
+     });
+
+     anime({
+         targets:'.title',
+         translateX:[60,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine'
+     });
+
+     anime({
+         targets:'.btns',
+         translateY:[-30,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:300,
+     });
+</script>
+</body>
+</html>

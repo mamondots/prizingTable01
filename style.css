@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100%;
+    background-color:#f7f7f7;
+    padding:60px 100px;
+}
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:500;
+    color:#0b2100;
+}
+.title span{
+    color:#349c4b;
+}
+.btns{
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:25px;
+}
+.tab-btn{
+    width:193px;
+    height:48px;
+    background-color:#f7f7f7;
+    border-radius:25px;
+    box-shadow:12px 12px 35px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition:0.5s;
+}
+.tab-btn a{
+    text-decoration:none;
+    line-height:48px;
+    padding:6px 12px;
+    border-radius:25px;
+    background-color:#349c4b;
+    border:1px solid #349c4b;
+    font-size:16px;
+    color:#fff;
+    transition:0.5s;
+}
+.tab-btn a:hover{
+    border:1px solid #349c4b;
+    background-color:transparent;
+    color:#262626;
+}
+.tab-btn .btn-02{
+    background-color:transparent;
+    color:#262626;
+    border-color:transparent;
+}
+.btns .save{
+    color:#7732bb;
+    margin-left:18px;
+    text-transform: uppercase;
+}
+.prizing-boxes{
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:80px 0px;
+}
+.prizing-box{
+    position: relative;
+    width:283px;
+    height:380px;
+    background-color:#fff;
+    box-shadow:0px 0px 4px rgba(24,59,86,0.05);
+    margin:2px 2px;
+    text-align:center;
+    padding:42px 0;
+    transition:0.5s;
+    cursor: pointer;
+    border:1px solid #349c4b00;
+}
+.prizing-box:hover{
+    background-color:rgba(52,156,75,0.05);
+    border:1px solid #349c4b;
+}
+.prizing-box.active-box{
+    background-color:rgba(52,156,75,0.05)
+}
+.prizing-box .start{
+    font-size:28px;
+    font-weight:500;
+    text-transform: capitalize;
+    color:#0b2110;
+}
+.prizing-box .text{
+    font-weight:400;
+    font-size:16px;
+    color:#2e3630;
+    line-height:1.5;
+    padding-top:12px;
+}
+.prizing-box .free{
+    padding-top:30px;
+    font-weight:600;
+    font-size:40px;
+    color:#0b2110;
+    text-transform: capitalize;
+}
+.prizing-box button{
+    padding:10px 20px;
+    font-weight:500;
+    font-size:18px;
+    text-align:center;
+    text-transform: capitalize;
+    color:#0b2110;
+    border:1px solid #0b2110;
+    border-radius:8px;
+    background-color:transparent;
+    outline:none;
+    margin-top:30px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.prizing-box:hover button{
+    background-color:#349c4b;
+    border-color:transparent;
+    color:#fff;
+}
+sub{
+    position: relative;
+    font-size:16px;
+    top:-15px;
+}
